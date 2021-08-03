@@ -2,7 +2,7 @@
   "name": "smart-matter",
   "version": "1.0.0",
   "description": "Parses front matter Yaml from a file path or a string and returns an Object. Used by squido.org.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "ava",
     "lint": "eslint ./"
