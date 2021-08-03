@@ -38,7 +38,7 @@ Input is a string contents which returns an object.
 const path = require('path');
 const { file } = require('start-matter');
 const sm = file(path.join(__dirname, 'file.markdown'));
-console.log('matter', sm(str));
+console.log('matter', sm);
 ```
 
 This assumes that `file.markdown` is formatted similar to this:
@@ -88,7 +88,7 @@ const fs = require('fs');
 const { contents } = require('start-matter');
 const filePath = fs.readFileSync('file.markdown', 'utf8');
 const sm = contents(filePath);
-console.log('matter', sm(str));
+console.log('matter', sm);
 ```
 
 This assumes that `file.markdown` is formatted similar to this:
