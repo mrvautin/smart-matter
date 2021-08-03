@@ -56,7 +56,7 @@ tags:
 
 `smart-matter` will parse this file and return an object like this:
 
-```json
+```javascript
 {
     title: "Hello World",
     permalink: "hello-world",
@@ -106,7 +106,7 @@ tags:
 
 `smart-matter` will parse this file and return an object like this:
 
-```json
+```javascript
 {
     title: "Hello World",
     permalink: "hello-world",
