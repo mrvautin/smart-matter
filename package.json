@@ -1,0 +1,50 @@
+{
+  "name": "smart-matter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "lint": "eslint ./"
+  },
+  "ava": {
+    "serial": true,
+    "files": [
+      "./tests/specs/*.js"
+    ],
+    "timeout": "20s",
+    "verbose": true,
+    "environmentVariables": {
+      "NODE_ENV": "test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrvautin/smart-matter.git"
+  },
+  "keywords": [
+    "front-matter",
+    "front",
+    "matter",
+    "yaml",
+    "markdown",
+    "parse"
+  ],
+  "readmeFilename": "README.md",
+  "author": "mrvautin",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "eslint": "^7.23.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-extra-rules": "0.0.0-development",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
