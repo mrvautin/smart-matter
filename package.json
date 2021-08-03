@@ -1,6 +1,6 @@
 {
   "name": "smart-matter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parses front matter Yaml from a file path or a string and returns an Object. Used by squido.org.",
   "main": "lib/index.js",
   "scripts": {
