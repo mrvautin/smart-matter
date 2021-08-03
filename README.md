@@ -8,7 +8,9 @@ $ npm install --save start-matter
 
 ## How does it work
 
-`start-matter` parses front-matter either from a file path or from a string containing front-matter.
+`start-matter` parses front-matter either from a file path or from a string containing `front-matter`.
+
+If supplied, `smart-matter` will parse a `date` input into a Javascript Date Object. When using the `file`(path) API, `smart-matter` will return last modified date of the file.
 
 # API
 
