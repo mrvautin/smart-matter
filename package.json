@@ -1,7 +1,7 @@
 {
   "name": "smart-matter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Parses front matter Yaml from a file path or a string and returns an Object. Used by squido.org.",
   "main": "index.js",
   "scripts": {
     "test": "ava",
@@ -28,7 +28,8 @@
     "matter",
     "yaml",
     "markdown",
-    "parse"
+    "parse",
+    "squido"
   ],
   "readmeFilename": "README.md",
   "author": "mrvautin",

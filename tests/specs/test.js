@@ -4,7 +4,7 @@ const {
 const path = require('path');
 const fs = require('fs');
 const h = require('../helper');
-const { file, contents } = require('../../index');
+const { file, contents } = require('../../lib/index');
 
 test('Get from file path', async t => {
     const filePath = path.join(__dirname, '../', 'valid.markdown');
