@@ -1,8 +1,8 @@
 {
   "name": "smart-matter",
-  "version": "2.0.2",
+  "version": "2.0.1",
   "description": "Parses front matter Yaml from a file path or a string and returns an Object. Used by squido.org.",
-  "main": "dist/index.js",
+  "main": "src/index.ts",
   "scripts": {
     "build": "npx tsc",
     "test": "npx jest",
@@ -26,13 +26,10 @@
     "metadata",
     "meta"
   ],
-  "typings": "dist/index.d.ts",
-  "exports": {
-    "./*": "./dist/*"
-  },
+  "typings": "./dist/index.d.ts",
   "typesVersions": {
     "*": {
-      "*": ["dist/*"]
+      "*": ["./dist/*"]
     }
   },
   "readmeFilename": "README.md",
