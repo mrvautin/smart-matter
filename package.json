@@ -4,7 +4,7 @@
   "description": "Parses front matter Yaml from a file path or a string and returns an Object. Used by squido.org.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc",
     "test": "npx jest",
     "lint": "eslint ./"
   },
