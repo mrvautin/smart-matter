@@ -3,12 +3,12 @@
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save start-matter
+$ npm install --save smart-matter
 ```
 
 ## How does it work
 
-`start-matter` parses front-matter either from a file path or from a string containing `front-matter`.
+`smart-matter` parses front-matter either from a file path or from a string containing `front-matter`.
 
 If supplied, `smart-matter` will parse a `date` input into a Javascript Date Object. When using the `file`(path) API, `smart-matter` will return last modified date of the file.
 
@@ -36,7 +36,7 @@ Input is a string contents which returns an object.
 
 ```js
 const path = require('path');
-const { file } = require('start-matter');
+const { file } = require('smart-matter');
 const sm = file(path.join(__dirname, 'file.markdown'));
 console.log('matter', sm);
 ```
@@ -85,7 +85,7 @@ tags:
 
 ```js
 const fs = require('fs');
-const { contents } = require('start-matter');
+const { contents } = require('smart-matter');
 const filePath = fs.readFileSync('file.markdown', 'utf8');
 const sm = contents(filePath);
 console.log('matter', sm);
