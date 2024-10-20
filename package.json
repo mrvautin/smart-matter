@@ -1,23 +1,14 @@
 {
   "name": "smart-matter",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Parses front matter Yaml from a file path or a string and returns an Object. Used by squido.org.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "ava",
+    "build": "tsc",
+    "test": "npx jest",
     "lint": "eslint ./"
   },
-  "ava": {
-    "serial": true,
-    "files": [
-      "./tests/specs/*.js"
-    ],
-    "timeout": "20s",
-    "verbose": true,
-    "environmentVariables": {
-      "NODE_ENV": "test"
-    }
-  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git://github.com/mrvautin/smart-matter.git"
@@ -29,7 +20,11 @@
     "yaml",
     "markdown",
     "parse",
-    "squido"
+    "squido",
+    "typescript",
+    "ts",
+    "metadata",
+    "meta"
   ],
   "readmeFilename": "README.md",
   "author": "mrvautin",
@@ -39,13 +34,21 @@
     "md5": "^2.3.0"
   },
   "devDependencies": {
-    "ava": "^3.15.0",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.13",
+    "@types/js-yaml": "^4.0.9",
+    "@types/md5": "^2.3.5",
+    "@types/node": "^22.7.7",
+    "babel-jest": "^29.7.0",
     "eslint": "^7.23.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-extra-rules": "0.0.0-development",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^9.2.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3"
   }
 }

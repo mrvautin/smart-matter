@@ -35,8 +35,8 @@ Input is a string contents which returns an object.
 ## file (path)
 
 ```js
-const path = require('path');
-const { file } = require('smart-matter');
+import path from 'path';
+import { file } from 'smart-matter' ;
 const sm = file(path.join(__dirname, 'file.markdown'));
 console.log('matter', sm);
 ```
@@ -84,8 +84,8 @@ tags:
 ## contents (string)
 
 ```js
-const fs = require('fs');
-const { contents } = require('smart-matter');
+import fs from 'fs';
+import { contents } from 'smart-matter';
 const filePath = fs.readFileSync('file.markdown', 'utf8');
 const sm = contents(filePath);
 console.log('matter', sm);
